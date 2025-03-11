@@ -19,7 +19,7 @@ export const Contact = () => {
         e.target,
         import.meta.env.VITE_PUBLIC_KEY
       )
-      .then((result) => {
+      .then(() => {
         alert("Message Sent");
         setFormData({ name: "", email: "", message: "" });
       })
@@ -32,8 +32,8 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px-4 w-150">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Get In Touch
+          <h2 className="text-3xl font-bold mb-8 text-[#4A628A] text-center">
+            Hubungi Saya
           </h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
@@ -47,7 +47,7 @@ export const Contact = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
                 }
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full bg-white/5 border border-[#4A628A] rounded px-4 py-3 text-black/50 transition focus:outline-none focus:border-blue-900 focus:bg-blue-500/10"
               />
             </div>
             <div className="relative">
@@ -61,7 +61,7 @@ export const Contact = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full bg-white/5 border border-[#4A628A] rounded px-4 py-3 text-black/50 transition focus:outline-none focus:border-blue-900 focus:bg-blue-500/10"
               />
             </div>
             <div className="relative">
@@ -75,15 +75,15 @@ export const Contact = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full bg-white/5 border border-[#4A628A] rounded px-4 py-3 text-black/50 transition focus:outline-none focus:border-blue-900 focus:bg-blue-500/10"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(50,130,246,0.4)"
+              className="w-full bg-[#7AB2D3] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(50,130,246,0.4)"
             >
-              Send Message
+              Kirim Pesan
             </button>
           </form>
         </div>
